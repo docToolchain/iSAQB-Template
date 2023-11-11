@@ -1,0 +1,86 @@
+= asciidoctor-lists
+
+image:https://img.shields.io/gem/dt/asciidoctor-lists[Gem, link=https://rubygems.org/gems/asciidoctor-lists]
+image:https://github.com/Alwinator/asciidoctor-lists/actions/workflows/test.yml/badge.svg[Test, link=https://github.com/Alwinator/asciidoctor-lists/actions/workflows/test.yml]
+image:https://github.com/Alwinator/asciidoctor-lists/actions/workflows/publish_gem.yml/badge.svg[Build, link=https://github.com/Alwinator/asciidoctor-lists/actions/workflows/publish_gem.yml]
+image:https://img.shields.io/gem/v/asciidoctor-lists.svg[Latest Release, link=https://rubygems.org/gems/asciidoctor-lists]
+image:https://img.shields.io/github/stars/Alwinator/asciidoctor-lists[Stars, link=https://github.com/Alwinator/asciidoctor-lists]
+
+
+
+An https://asciidoctor.org/[asciidoctor] extension that adds a list of figures, a list of tables, or a list of anything you want!
+
+*Pull Requests are always welcome! :)*
+
+IMPORTANT: With version 1.0.6 the syntax was changed from `element_list::[element=image]` to `list-of::image[]` to make it more intuitive.
+
+== Install
+[source,asciidoc]
+----
+gem install asciidoctor-lists
+----
+
+== Sample
+=== Code
+[source,asciidoc]
+----
+...
+
+=== List of figures
+list-of::image[]
+
+=== List of tables
+list-of::table[]
+
+=== List of code snippets
+list-of::listing[]
+----
+
+See link:samples/list-sample.adoc[]
+
+=== Rendered
+image::img/sample.png[Sample,width=400]
+
+== Parameters
+=== element
+Specifies the element to be listed
+
+Sample: link:samples/list-sample.adoc[]
+
+=== enhanced_rendering (experimental)
+Allows rendering links in the caption
+
+Sample: link:samples/enhanced-rendering.adoc[]
+
+=== hide_empty_section
+Removes the section when no elements are found
+
+Sample: link:samples/hide-if-empty-list-sample.adoc[]
+
+== Docker
+[source,bash]
+----
+# Build container
+docker build -t asciidoctor-lists .
+# Run Docker
+docker run -it --rm -v $(pwd):/work asciidoctor-lists
+# Build sample
+asciidoctor-pdf -r asciidoctor-lists samples/list-sample.adoc
+----
+
+== Dev setup
+=== Run
+[source,bash]
+----
+asciidoctor -r ./lib/asciidoctor-lists.rb samples/list-sample.adoc
+----
+
+=== Install Gem
+[source,bash]
+----
+gem build asciidoctor-lists.gemspec
+gem install asciidoctor-lists-x.x.x.gem
+----
+
+== Docker Image
+- Support in official asciidoctor Docker image is waiting for approval (See https://github.com/asciidoctor/docker-asciidoctor/pull/262)

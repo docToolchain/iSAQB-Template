@@ -1,0 +1,6 @@
+ifndef::imagesdir[:imagesdir: ../images]
+
+:toc-title: Inhalt
+:toc: preamble
+:figure-caption: Abbildung
+:table-caption: Tabelle

@@ -1,0 +1,17 @@
+include::../_config.adoc[]
+
+= CPSA-A Abschlussaufgabe: {nameDerAufgabe}
+{author} <{authorEmail}>
+{version}, {version-date}
+
+[discrete]
+== Liste der Abbildungen
+list-of::image[]
+
+[discrete]
+== Liste der Tabellen
+list-of::table[]
+
+//[discrete]
+//== List of code snippets
+//list-of::listing[hide_empty_section=true]

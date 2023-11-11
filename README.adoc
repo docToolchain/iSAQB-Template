@@ -1,0 +1,32 @@
+== iSAQB AsciiDoc Template
+
+Dieses Repository enthält eine Vorlage für die Erstellung von Dokumentationen im Rahmen des iSAQB Certified Professional for Software Architecture Programm.
+
+Zum initialisieren müssen folgende zwei Befehle ausgeführt werden:
+
+```
+./dtcw local install java
+./dtcw local install doctoolchain
+```
+
+Danach kann die Dokumentation mit folgendem Befehl generiert werden:
+
+```
+./dtcw local generatePDF
+```
+
+Das Ergebnis ist dann im Ordner `build/pdf` zu finden.
+
+Das Template nutzt ein custom pdfTheme, welches
+* die vorgegebene Schriftgröße verwendet
+* die vorgegebenen Zeilenabstände verwendet
+* die vorgegebenen Seitenränder verwendet
+* eine Liste der Abbildungen und Tabellen am Anfang des Dokuments ausgibt
+* die iSAQB CI Farben verwendet
+
+NOTE: Die Arbeit muss anonym abgegeben werden.
+Vor Abgabe sollte also der Name aus dem Titelblatt entfernt werden.
+
+NOTE: Als Default wird das arc42 Template gerendert.
+Die Arbeit ist jedoch _nicht_ nach arc42 zu strukturieren, sondern es sollen die in der Arbeit gestellten Fragen bearbeitet und beantwortet werden.
+
