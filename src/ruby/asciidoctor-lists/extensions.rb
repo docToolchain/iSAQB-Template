@@ -57,7 +57,7 @@ module AsciidoctorLists
                    end
                  else
                    if element.caption
-                    references_asciidoc << %(xref:#{element.id}[#{element.caption}]#{element.title} #{element.id} +)
+                    references_asciidoc << %(xref:#{element.id}[#{element.caption}]#{element.title} +)
                    else element.caption
                     references_asciidoc << %(xref:#{element.id}[#{element.title}] fehlende caption +)
                  end
