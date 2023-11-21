@@ -508,7 +508,7 @@ how_to_install_sdkman() {
 }
 
 local_install_java() {
-    version=17
+    version=11
     implementation=hotspot
     heapsize=normal
     imagetype=jdk
