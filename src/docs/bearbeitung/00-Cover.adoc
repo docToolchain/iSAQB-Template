@@ -1,7 +1,5 @@
-include::../_config.adoc[]
-
 = CPSA-A Abschlussaufgabe: {nameDerAufgabe}
-{author} <{authorEmail}>
+Prüfungsnummer: {pruefNummer}
 {version}, {version-date}
 
 [discrete]
@@ -11,7 +9,3 @@ list-of::image[]
 [discrete]
 == Liste der Tabellen
 list-of::table[]
-
-//[discrete]
-//== List of code snippets
-//list-of::listing[hide_empty_section=true]
