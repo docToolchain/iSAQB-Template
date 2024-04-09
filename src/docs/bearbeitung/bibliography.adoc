@@ -1,0 +1,4 @@
+[bibliography]
+= Referenzen
+
+* [[[ARC42]]]: arc42, Starke et al., https://arc42.org/

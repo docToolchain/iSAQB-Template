@@ -1,0 +1,28 @@
+:doctype: book
+:sectnums:
+:pdf-themesdir: ../pdfTheme
+:pdf-theme: custom
+:nameDerAufgabe: Lorem Ipsum Aufgabe
+:version: 1.0
+:version-date: Today
+:pruefNummer: XXXX
+
+// configure DE settings for asciidoc
+include::../_config.adoc[]
+
+include::00-Cover.adoc[]
+
+// Anmerkungen zur Notation
+//include::chapters/01_Hinweise.adoc[]
+
+// Bearbeitung der Aufgaben
+include::chapters/00_content.adoc[]
+
+// An die Prüfer gestellte Fragen mit Reaktionen
+//include::chapters/03_Kommunikation-Pruefer.adoc[]
+
+// Glossar mit Abkürzungen
+include::glossary.adoc[]
+
+// Referenzen außerhalb dieser Arbeit
+include::bibliography.adoc[]

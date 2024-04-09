@@ -16,3 +16,5 @@ ifndef::imagesdir[:imagesdir: ../images]
 :example-caption: Beispiel
 :figure-caption: Abbildung
 :table-caption: Tabelle
+
+:chapter-signifier: Teilaufgabe
