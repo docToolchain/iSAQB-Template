@@ -1,0 +1,4 @@
+:numbered:
+
+include::task1.adoc[]
+include::task2.adoc[]

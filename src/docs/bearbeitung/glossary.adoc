@@ -1,0 +1,5 @@
+[glossary]
+= Glossar
+
+[glossary]
+ISAQB:: International Software Architecture Qualification Board
