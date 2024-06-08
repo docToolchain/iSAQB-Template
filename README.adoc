@@ -18,6 +18,7 @@ Danach kann die Dokumentation mit folgendem Befehl generiert werden:
 Das Ergebnis ist dann im Ordner `build/pdf` zu finden.
 
 Das Template nutzt ein custom pdfTheme, welches
+
 * die vorgegebene Schriftgröße verwendet
 * die vorgegebenen Zeilenabstände verwendet
 * die vorgegebenen Seitenränder verwendet
@@ -29,4 +30,7 @@ Vor Abgabe sollte also der Name aus dem Titelblatt entfernt werden.
 
 NOTE: Als Default wird das arc42 Template gerendert.
 Die Arbeit ist jedoch _nicht_ nach arc42 zu strukturieren, sondern es sollen die in der Arbeit gestellten Fragen bearbeitet und beantwortet werden.
+
+Ein Beispiel findet sich hier: https://github.com/docToolchain/iSAQB-Template/files/14921360/Bearbeitung.pdf
+
 
