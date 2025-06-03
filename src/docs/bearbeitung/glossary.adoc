@@ -2,4 +2,7 @@
 = Glossar
 
 [glossary]
-ISAQB:: International Software Architecture Qualification Board
+[[ISAQB]]ISAQB::
+    International Software Architecture Qualification Board
+ISTQB::
+    International Software Testing Qualification Board

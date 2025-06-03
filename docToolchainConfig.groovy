@@ -32,7 +32,7 @@ taskInputsDirs = [
 
 taskInputsFiles = []
 
-rubyExtensions = ['src/ruby/asciidoctor-lists']
+rubyExtensions = ['src/ruby/asciidoctor-lists.rb']
 
 //*****************************************************************************************
 

@@ -1,5 +1,6 @@
 # https://docs.asciidoctor.org/pdf-converter/latest/theme/title-page/
-
+extends:
+  default
 title_page:
   align: left
   font-color: #767A7D
@@ -14,11 +15,12 @@ title_page:
   revision:
     font-color: #767A7D
 
-
 page:
   layout: portrait
   margin: [2.5cm, 2.5cm, 2.5cm, 2.5cm]
   size: A4
+  numbering:
+    start-at: toc
 font:
   catalog:
     # Noto Serif supports Latin, Latin-1 Supplement, Latin Extended-A, Greek, Cyrillic, Vietnamese & an assortment of symbols
@@ -29,10 +31,14 @@ font:
       bold_italic: notoserif-bold_italic-subset.ttf
     # M+ 1mn supports ASCII and the circled numbers used for conums
     M+ 1mn:
-      normal: mplus1mn-regular-ascii-conums.ttf
-      bold: mplus1mn-bold-ascii.ttf
-      italic: mplus1mn-italic-ascii.ttf
-      bold_italic: mplus1mn-bold_italic-ascii.ttf
+     #normal: mplus1mn-regular-ascii-conums.ttf
+     # bold: mplus1mn-bold-ascii.ttf
+     # italic: mplus1mn-italic-ascii.ttf
+     # bold_italic: mplus1mn-bold_italic-ascii.ttf
+      normal: mplus1mn-regular-subset.ttf
+      bold: mplus1mn-bold-subset.ttf
+      italic: mplus1mn-italic-subset.ttf
+      bold_italic: mplus1mn-bold_italic-subset.ttf
     # M+ 1p supports Latin, Latin-1 Supplement, Latin Extended, Greek, Cyrillic, Vietnamese, Japanese & an assortment of symbols
     # It also provides arrows for ->, <-, => and <= replacements in case these glyphs are missing from font
     M+ 1p Fallback:
@@ -43,24 +49,24 @@ font:
   fallbacks:
     - M+ 1mn
 conum:
-  font_family: Noto Serif
+  font-family: Noto Serif
 code:
-  font_family: M+ 1mn
+  font-family: M+ 1mn
 base:
-  font_family: Noto Serif
-  font_size: 11
-  font_color: #333333
-  line_height: 1
+  font-family: Noto Serif
+  font-size: 11
+  font-color: #333333
+  line-height: 1
 #vertical_rhythm: $base_line_height_length
 heading:
-  font_color: #E19800
-  font_size: 17
-  font_style: bold
-  line_height: 1.2
+  font-color: #E19800
+  font-size: 17
+  font-style: bold
+  line-height: 1.2
 #  margin_bottom: $vertical_rhythm
 link:
   font_color: #E19800
-outline_list:
+list:
   indent: $base_font_size * 1.5
 header:
   height: 0.75in
@@ -75,14 +81,18 @@ footer:
    line_height: 1
    font_color: #767A7D
    recto:
-     right: 
+     right:
        content: '{chapter-title} | *{page-number}*'
    verso:
-     left: 
+     left:
       content: '*{page-number}* | {chapter-title}'
 image:
   align: center
 caption:
   align: center
-  font_color: #E19800
-  font_size: 10
+  font-color: #E19800
+  font-size: 10
+table:
+  head:
+    font-style: bold
+    background-color: #F0F0F0
